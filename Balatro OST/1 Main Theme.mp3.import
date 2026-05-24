@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c18mh3hfs34ct"
+path="res://.godot/imported/1 Main Theme.mp3-7ce5464d582feb10ed311038abf8fc4f.mp3str"
+
+[deps]
+
+source_file="res://Balatro OST/1 Main Theme.mp3"
+dest_files=["res://.godot/imported/1 Main Theme.mp3-7ce5464d582feb10ed311038abf8fc4f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

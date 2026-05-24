@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dppxt1bfbrgwy"]
+
+[ext_resource type="Script" uid="uid://cuhg8r51pf4ep" path="res://joker/JokerCard.gd" id="1_pn50n"]
+
+[node name="JokerCard" type="Control" unique_id=1807229290]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 71.0
+offset_bottom = 95.0
+mouse_filter = 1
+script = ExtResource("1_pn50n")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=365645136]
+layout_mode = 0
+offset_right = 71.0
+offset_bottom = 95.0
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1206087494]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 6
+layout_mode = 0
+offset_right = 71.0
+offset_bottom = 95.0
+metadata/_edit_lock_ = true

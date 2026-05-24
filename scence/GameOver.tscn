@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://cvpmwej8eptx3"]
+
+[ext_resource type="Script" uid="uid://b8py4i4cj2nvo" path="res://scence/game_over.gd" id="1_aq6k6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ny25"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.38109186, 0.3133042, 0.3133042, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e88pn"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0.7949104, 0.18150565, 0.09979092, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aq6k6"]
+bg_color = Color(0.93143016, 0.4219816, 0.32249558, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(8, 8)
+
+[node name="Node" type="CanvasLayer" unique_id=63271278]
+process_mode = 3
+layer = 10
+script = ExtResource("1_aq6k6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=236656197]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="MainPanel" type="PanelContainer" parent="." unique_id=1682820368]
+custom_minimum_size = Vector2(500, 600)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.5
+offset_top = -293.0
+offset_right = 219.5
+offset_bottom = 293.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8ny25")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MainPanel" unique_id=1816185580]
+layout_mode = 2
+
+[node name="游戏结束" type="Label" parent="MainPanel/VBoxContainer2" unique_id=1982311051]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.58383155, 0.48452926, 1)
+theme_override_colors/font_shadow_color = Color(0.5847179, 0.24780053, 0.24780053, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 5
+theme_override_font_sizes/font_size = 48
+text = "游戏结束"
+horizontal_alignment = 1
+
+[node name="StateGrid" type="GridContainer" parent="MainPanel/VBoxContainer2" unique_id=1148581607]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 12
+columns = 2
+
+[node name="ButtonVBox" type="VBoxContainer" parent="MainPanel/VBoxContainer2" unique_id=1951230061]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="restart" type="Button" parent="MainPanel/VBoxContainer2/ButtonVBox" unique_id=2077237219]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_e88pn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_aq6k6")
+text = "开始新的一局"
+
+[node name="menu" type="Button" parent="MainPanel/VBoxContainer2/ButtonVBox" unique_id=352619892]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_e88pn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_aq6k6")
+text = "主菜单"
+
+[connection signal="pressed" from="MainPanel/VBoxContainer2/ButtonVBox/restart" to="." method="_on_restart"]
+[connection signal="pressed" from="MainPanel/VBoxContainer2/ButtonVBox/menu" to="." method="_on_main_menu"]

@@ -1,0 +1,725 @@
+[gd_scene format=3 uid="uid://b82p0ojwca0lq"]
+
+[ext_resource type="Script" uid="uid://urdh7w8txrk2" path="res://scence/main.gd" id="1_7538n"]
+[ext_resource type="Texture2D" uid="uid://twgoaww721ls" path="res://resources/textures/2x/BlindChips.png" id="2_7essg"]
+[ext_resource type="PackedScene" uid="uid://34y868ou2akt" path="res://scence/background.tscn" id="2_7538n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqvm3"]
+bg_color = Color(0.31678468, 0.31678474, 0.31678462, 1)
+border_width_left = 5
+border_width_right = 5
+border_color = Color(0.26106828, 0.6331135, 0.9482642, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_shc2a"]
+bg_color = Color(0.09615175, 0.42444882, 0.8164428, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sr2ul"]
+bg_color = Color(0.21950099, 0.21950105, 0.21950087, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj2y4"]
+atlas = ExtResource("2_7essg")
+region = Rect2(0, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmbla"]
+atlas = ExtResource("2_7essg")
+region = Rect2(68, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47hqa"]
+atlas = ExtResource("2_7essg")
+region = Rect2(136, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bk32q"]
+atlas = ExtResource("2_7essg")
+region = Rect2(204, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rajj"]
+atlas = ExtResource("2_7essg")
+region = Rect2(272, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b580w"]
+atlas = ExtResource("2_7essg")
+region = Rect2(340, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh3jc"]
+atlas = ExtResource("2_7essg")
+region = Rect2(408, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skjli"]
+atlas = ExtResource("2_7essg")
+region = Rect2(476, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsqyq"]
+atlas = ExtResource("2_7essg")
+region = Rect2(544, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8e33y"]
+atlas = ExtResource("2_7essg")
+region = Rect2(612, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvhh0"]
+atlas = ExtResource("2_7essg")
+region = Rect2(680, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbk2e"]
+atlas = ExtResource("2_7essg")
+region = Rect2(748, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jigb"]
+atlas = ExtResource("2_7essg")
+region = Rect2(816, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5xw6"]
+atlas = ExtResource("2_7essg")
+region = Rect2(884, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsn77"]
+atlas = ExtResource("2_7essg")
+region = Rect2(952, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7hom"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1020, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvfly"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1088, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_st2mh"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1156, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpse3"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1224, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00185"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1292, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_laq0e"]
+atlas = ExtResource("2_7essg")
+region = Rect2(1360, 0, 68, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s22ko"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj2y4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmbla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47hqa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bk32q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rajj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b580w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh3jc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skjli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsqyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8e33y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvhh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbk2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jigb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5xw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsn77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7hom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvfly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_st2mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpse3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00185")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_laq0e")
+}],
+"loop": true,
+"name": &"smallblind",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frnrb"]
+bg_color = Color(0.18598089, 0.18598095, 0.1859808, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b42mj"]
+bg_color = Color(0.45840496, 0.45840508, 0.4584049, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fo6n1"]
+bg_color = Color(0.23750761, 0.42323568, 0.848597, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h1bm"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kack1"]
+bg_color = Color(0.27752772, 0.27752775, 0.27752757, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j33e6"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntw35"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_etlqr"]
+bg_color = Color(0.6601748, 0.12435011, 0.06273915, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6d5r"]
+bg_color = Color(0.8666667, 0.49411765, 0.11372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j34c"]
+bg_color = Color(0.8666667, 0.49411765, 0.11372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bltgc"]
+bg_color = Color(0.6743485, 0.3744314, 0.053118497, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_47hqa"]
+bg_color = Color(0.23750761, 0.42323568, 0.848597, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk32q"]
+bg_color = Color(0.14928758, 0.30504334, 0.6754582, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7essg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 5
+border_width_right = 3
+border_width_bottom = 5
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nmbla"]
+bg_color = Color(0.6743485, 0.3744314, 0.053118497, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qj2y4"]
+bg_color = Color(0.6743485, 0.3744314, 0.053118497, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hh3jc"]
+bg_color = Color(0.51747596, 0.28021747, 0.03026452, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skjli"]
+bg_color = Color(0.6743485, 0.3744314, 0.053118497, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsqyq"]
+bg_color = Color(0.51747596, 0.28021747, 0.03026452, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rajj"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b580w"]
+bg_color = Color(0.737559, 0.14554915, 0.07743875, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=705235007]
+script = ExtResource("1_7538n")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1572372694]
+offset_left = 20.0
+offset_top = -11.0
+offset_right = 269.0
+offset_bottom = 730.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pqvm3")
+
+[node name="node" type="Control" parent="PanelContainer" unique_id=698893760]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/node" unique_id=1474165879]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 18.0
+offset_right = 224.0
+offset_bottom = 427.0
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="盲注信息" type="Panel" parent="PanelContainer/node/VBoxContainer" unique_id=1292660741]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_shc2a")
+metadata/_edit_lock_ = true
+
+[node name="Panel" type="Panel" parent="PanelContainer/node/VBoxContainer/盲注信息" unique_id=1889101133]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 37.0
+offset_right = 200.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sr2ul")
+metadata/_edit_lock_ = true
+
+[node name="奖励" type="Label" parent="PanelContainer/node/VBoxContainer/盲注信息/Panel" unique_id=1862439374]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 48.0
+offset_right = 64.0
+offset_bottom = 71.0
+text = "奖励："
+metadata/_edit_lock_ = true
+
+[node name="目标分数值" type="Label" parent="PanelContainer/node/VBoxContainer/盲注信息/Panel" unique_id=770928706]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 32.0
+offset_right = 74.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.9593801, 0.3010111, 0.32889473, 1)
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="目标分数文本" type="Label" parent="PanelContainer/node/VBoxContainer/盲注信息/Panel" unique_id=1958298670]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 1.0
+offset_right = 80.0
+offset_bottom = 24.0
+text = "至少得分"
+
+[node name="Label" type="Label" parent="PanelContainer/node/VBoxContainer/盲注信息/Panel" unique_id=1003060371]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 51.0
+offset_right = 102.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.8270156, 0.6411234, 1.1551381e-06, 1)
+text = "$$$"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PanelContainer/node/VBoxContainer/盲注信息" unique_id=1054054957]
+position = Vector2(51, 71)
+sprite_frames = SubResource("SpriteFrames_s22ko")
+animation = &"smallblind"
+autoplay = "smallblind"
+frame = 13
+frame_progress = 0.8526941
+
+[node name="Panel" type="Panel" parent="PanelContainer/node/VBoxContainer" unique_id=1924187505]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+metadata/_edit_lock_ = true
+
+[node name="总分文本" type="Label" parent="PanelContainer/node/VBoxContainer/Panel" unique_id=1426901390]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 12.0
+offset_right = 83.0
+offset_bottom = 43.0
+text = "回合分数"
+
+[node name="总分值" type="Button" parent="PanelContainer/node/VBoxContainer/Panel" unique_id=867211266]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 14.0
+offset_right = 187.0
+offset_bottom = 35.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_b42mj")
+text = "0"
+
+[node name="Panel2" type="Panel" parent="PanelContainer/node/VBoxContainer" unique_id=225650564]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+metadata/_edit_lock_ = true
+
+[node name="筹码" type="Button" parent="PanelContainer/node/VBoxContainer/Panel2" unique_id=1750536145]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 18.0
+offset_right = 94.0
+offset_bottom = 58.0
+mouse_filter = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_fo6n1")
+
+[node name="倍率" type="Button" parent="PanelContainer/node/VBoxContainer/Panel2" unique_id=968004926]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 19.0
+offset_right = 190.0
+offset_bottom = 59.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5h1bm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5h1bm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5h1bm")
+
+[node name="弃牌" type="Panel" parent="PanelContainer/node" unique_id=2020849090]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 432.0
+offset_right = 208.0
+offset_bottom = 479.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+
+[node name="弃牌次数" type="Button" parent="PanelContainer/node/弃牌" unique_id=450422593]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 22.0
+offset_right = 39.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0.9545459, 0.24693644, 0.3045486, 1)
+text = "4"
+
+[node name="弃牌次数文本" type="Label" parent="PanelContainer/node/弃牌" unique_id=1885883049]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 38.0
+offset_bottom = 25.0
+text = "弃牌"
+
+[node name="出牌" type="Panel" parent="PanelContainer/node" unique_id=603225241]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 433.0
+offset_right = 158.0
+offset_bottom = 478.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+
+[node name="出牌次数" type="Button" parent="PanelContainer/node/出牌" unique_id=809246281]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 21.0
+offset_right = 43.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.41254354, 0.53962374, 0.96399945, 1)
+text = "4"
+
+[node name="出牌次数文本" type="Label" parent="PanelContainer/node/出牌" unique_id=822667091]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 43.0
+offset_bottom = 25.0
+text = "出牌"
+
+[node name="Panel" type="Panel" parent="PanelContainer/node" unique_id=636694279]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 490.0
+offset_right = 218.0
+offset_bottom = 556.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+
+[node name="Button" type="Button" parent="PanelContainer/node/Panel" unique_id=799740051]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 93.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0.827451, 0.6392157, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_kack1")
+text = "$4"
+
+[node name="Panel2" type="Panel" parent="PanelContainer/node" unique_id=2076458586]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 571.0
+offset_right = 165.0
+offset_bottom = 623.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+
+[node name="Label" type="Label" parent="PanelContainer/node/Panel2" unique_id=1669512622]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 48.0
+offset_bottom = 23.0
+text = "底注"
+
+[node name="Button" type="Button" parent="PanelContainer/node/Panel2" unique_id=319939529]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 25.0
+offset_right = 44.0
+offset_bottom = 43.0
+text = "1/8"
+
+[node name="Panel3" type="Panel" parent="PanelContainer/node" unique_id=308984211]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 571.0
+offset_right = 225.0
+offset_bottom = 625.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_frnrb")
+
+[node name="Label" type="Label" parent="PanelContainer/node/Panel3" unique_id=854498582]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 45.0
+offset_bottom = 23.0
+text = "回合"
+
+[node name="Button" type="Button" parent="PanelContainer/node/Panel3/Label" unique_id=1281092969]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 31.0
+offset_bottom = 49.0
+text = "1
+"
+
+[node name="Button" type="Button" parent="PanelContainer/node" unique_id=982870852]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 436.0
+offset_right = 90.0
+offset_bottom = 526.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_j33e6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ntw35")
+theme_override_styles/hover = SubResource("StyleBoxFlat_etlqr")
+text = "比赛
+信息"
+
+[node name="Button2" type="Button" parent="PanelContainer/node" unique_id=951646473]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 550.0
+offset_right = 90.0
+offset_bottom = 640.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_b6d5r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j34c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bltgc")
+text = "选项"
+
+[node name="牌" type="HBoxContainer" parent="." unique_id=1017004387]
+offset_left = 348.0
+offset_top = 629.0
+offset_right = 1170.0
+offset_bottom = 701.0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="出牌" type="Button" parent="牌" unique_id=1123337842]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_fo6n1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_47hqa")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bk32q")
+text = "出牌"
+metadata/_edit_lock_ = true
+
+[node name="理牌" type="Panel" parent="牌" unique_id=1071460719]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7essg")
+
+[node name="点数" type="Button" parent="牌/理牌" unique_id=1255886080]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 32.0
+offset_right = 46.0
+offset_bottom = 62.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nmbla")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qj2y4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hh3jc")
+text = "点数"
+
+[node name="花色" type="Button" parent="牌/理牌" unique_id=598709925]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 32.0
+offset_right = 93.0
+offset_bottom = 62.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nmbla")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_skjli")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tsqyq")
+text = "花色"
+
+[node name="Label" type="Label" parent="牌/理牌" unique_id=329471399]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 29.0
+text = "理牌"
+
+[node name="弃牌" type="Button" parent="牌" unique_id=1145385623]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_5h1bm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4rajj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b580w")
+text = "弃牌"
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" parent="." unique_id=999475141 instance=ExtResource("2_7538n")]
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="牌桌" type="HBoxContainer" parent="." unique_id=223534407]
+custom_minimum_size = Vector2(0, 95)
+offset_left = 419.0
+offset_top = 522.0
+offset_right = 1096.0
+offset_bottom = 617.0
+alignment = 1
+
+[node name="小丑牌桌" type="PanelContainer" parent="." unique_id=1307581706]
+custom_minimum_size = Vector2(0, 95)
+offset_left = 316.0
+offset_right = 778.0
+offset_bottom = 125.0
+
+[node name="小丑" type="HBoxContainer" parent="小丑牌桌" unique_id=687275453]
+layout_mode = 2
+
+[node name="消耗牌桌" type="PanelContainer" parent="." unique_id=1452903792]
+offset_left = 854.0
+offset_right = 1281.0
+offset_bottom = 128.0
+
+[node name="消耗牌" type="HBoxContainer" parent="消耗牌桌" unique_id=1441821003]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+
+[connection signal="pressed" from="牌/出牌" to="." method="_on_出牌_pressed"]
+[connection signal="pressed" from="牌/理牌/点数" to="." method="_on_点数_pressed"]
+[connection signal="pressed" from="牌/理牌/花色" to="." method="_on_花色_pressed"]
+[connection signal="pressed" from="牌/弃牌" to="." method="_on_弃牌_pressed"]

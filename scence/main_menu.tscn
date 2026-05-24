@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://sbjw106gdjd4"]
+
+[ext_resource type="Script" uid="uid://yrbuxj14u1nr" path="res://scence/main_menu.gd" id="1_3bgmf"]
+[ext_resource type="PackedScene" uid="uid://34y868ou2akt" path="res://scence/background.tscn" id="2_17vd0"]
+[ext_resource type="Texture2D" uid="uid://loi11saexu8d" path="res://resources/textures/2x/balatro.png" id="3_qwxbi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ykd1"]
+bg_color = Color(0.4096032, 0.4096033, 0.40960315, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 1.0
+expand_margin_top = 15.0
+expand_margin_right = 1.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bgmf"]
+bg_color = Color(0.20392157, 0.38431373, 0.8039216, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 2
+shadow_offset = Vector2(-2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17tuy"]
+bg_color = Color(0.20392157, 0.38431373, 0.8039216, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xknjj"]
+bg_color = Color(0.13725491, 0.2901961, 0.6509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 2
+shadow_offset = Vector2(-2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17vd0"]
+bg_color = Color(0.8666667, 0.49411765, 0.11372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_syaut"]
+bg_color = Color(0.8666667, 0.49411765, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quvbe"]
+bg_color = Color(0.6743485, 0.3744314, 0.053118497, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwxbi"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3kgy"]
+bg_color = Color(0.8666667, 0.1882353, 0.10980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhn3w"]
+bg_color = Color(0.6601748, 0.12435011, 0.06273915, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3buhr"]
+bg_color = Color(0.1882353, 0.6117647, 0.34509805, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 2
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k4jm"]
+bg_color = Color(0.1882353, 0.6117647, 0.34509805, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hovco"]
+bg_color = Color(0.13537452, 0.45393628, 0.25212982, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 2
+shadow_offset = Vector2(1, 1)
+
+[node name="MainMenu" type="Node2D" unique_id=1849768181]
+script = ExtResource("1_3bgmf")
+
+[node name="ColorRect" parent="." unique_id=999475141 instance=ExtResource("2_17vd0")]
+offset_left = 4.0
+offset_top = 7.0
+offset_right = 1284.0
+offset_bottom = 727.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1148060799]
+position = Vector2(630, 223)
+texture = ExtResource("3_qwxbi")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1253219776]
+offset_left = 340.0
+offset_top = 592.0
+offset_right = 901.0
+offset_bottom = 672.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4ykd1")
+
+[node name="MenuButtons" type="HBoxContainer" parent="PanelContainer" unique_id=1761404375]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="StartButton" type="Button" parent="PanelContainer/MenuButtons" unique_id=1144314700]
+custom_minimum_size = Vector2(160, 55)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3bgmf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_17tuy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xknjj")
+text = "开始游戏"
+
+[node name="SettingsButton" type="Button" parent="PanelContainer/MenuButtons" unique_id=279180984]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_17vd0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_syaut")
+theme_override_styles/hover = SubResource("StyleBoxFlat_quvbe")
+text = "选项"
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MenuButtons" unique_id=885816299]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qwxbi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_j3kgy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lhn3w")
+text = "退出"
+
+[node name="StatsButton" type="Button" parent="PanelContainer/MenuButtons" unique_id=151185209]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3buhr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4k4jm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hovco")
+text = "收藏"

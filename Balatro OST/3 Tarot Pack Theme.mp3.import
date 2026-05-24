@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0y2w8cpi5sr2"
+path="res://.godot/imported/3 Tarot Pack Theme.mp3-4cfbcb1d800cb81657f735588b993ef4.mp3str"
+
+[deps]
+
+source_file="res://Balatro OST/3 Tarot Pack Theme.mp3"
+dest_files=["res://.godot/imported/3 Tarot Pack Theme.mp3-4cfbcb1d800cb81657f735588b993ef4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

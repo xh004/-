@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dppxt1bfbrgwy"]
+
+[ext_resource type="Shader" uid="uid://dakuo3ncwk6d2" path="res://resources/shaders/cardfloat.gdshader" id="1_a7xbw"]
+[ext_resource type="Script" uid="uid://drmccfkgf3376" path="res://card/Playingcard.gd" id="1_q1c41"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0b3m"]
+shader = ExtResource("1_a7xbw")
+shader_parameter/wobble_speed = 2.0
+shader_parameter/wobble_amount = 0.05
+shader_parameter/breathe_scale = 0.02
+shader_parameter/is_selected = false
+shader_parameter/selected_intensity = 1.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1klge"]
+shader = ExtResource("1_a7xbw")
+shader_parameter/wobble_speed = 2.0
+shader_parameter/wobble_amount = 0.05
+shader_parameter/breathe_scale = 0.02
+shader_parameter/is_selected = false
+shader_parameter/selected_intensity = 1.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kxo5j"]
+shader = ExtResource("1_a7xbw")
+shader_parameter/wobble_speed = 2.0
+shader_parameter/wobble_amount = 0.05
+shader_parameter/breathe_scale = 0.02
+shader_parameter/is_selected = false
+shader_parameter/selected_intensity = 1.5
+
+[node name="Pocker_card" type="Control" unique_id=1617701132]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 512.0
+offset_top = 348.0
+offset_right = 583.0
+offset_bottom = 443.0
+mouse_filter = 1
+script = ExtResource("1_q1c41")
+rank = "K"
+seal = "金色蜡封"
+enhancement = "无"
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=470051043]
+material = SubResource("ShaderMaterial_q0b3m")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=557958992]
+z_index = 2
+material = SubResource("ShaderMaterial_1klge")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1407307756]
+z_index = 1
+material = SubResource("ShaderMaterial_kxo5j")
+layout_mode = 0
+offset_right = 71.0
+offset_bottom = 95.0
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="." unique_id=156191429]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 6
+layout_mode = 0
+offset_right = 74.0
+offset_bottom = 96.0
+metadata/_edit_lock_ = true

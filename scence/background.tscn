@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://34y868ou2akt"]
+
+[ext_resource type="Shader" uid="uid://dbp8ylpqvrekv" path="res://resources/myshader/Background.gdshader" id="1_rygag"]
+[ext_resource type="Script" uid="uid://doik31k78tdvt" path="res://scence/background.gd" id="2_2dmw8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d1uc6"]
+shader = ExtResource("1_rygag")
+shader_parameter/time = 0.0
+shader_parameter/spin_time = 0.0
+shader_parameter/colour_1 = Color(0.8, 0.2, 0.2, 1)
+shader_parameter/colour_2 = Color(0.2, 0.2, 0.8, 1)
+shader_parameter/colour_3 = Color(0.9, 0.9, 0.9, 1)
+shader_parameter/contrast = 1.0
+shader_parameter/spin_amount = 0.5
+
+[node name="ColorRect" type="ColorRect" unique_id=999475141]
+z_index = -1
+material = SubResource("ShaderMaterial_d1uc6")
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_2dmw8")
